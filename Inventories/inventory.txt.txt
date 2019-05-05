@@ -1,0 +1,4 @@
+[ansiblehosts]
+ansible_host1=172.20.10.14
+ansible_host2=172.20.10.9
+ansible_host3=172.20.10.8
