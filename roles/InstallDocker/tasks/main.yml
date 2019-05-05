@@ -1,18 +1,16 @@
 ---
 
-- hosts: ansiblehosts
-  
   - name: Install epel release
-    yum: 
-       name: epel-release
-       state: latest
+    yum:
+      name: epel-release
+      state: latest
 
   - name: Docker Repo
-    get_url: 
-         url: https://download.docker.com/linux/centos/docker-ce.repo 
-         dest: /etc/yum.repos.d/docker-ce.repo
-         mode: 0700
-         force_basic_auth: yes
+    get_url:
+      url: https://download.docker.com/linux/centos/docker-ce.repo
+      dest: /etc/yum.repos.d/docker-ce.repo
+      mode: 0700
+      force_basic_auth: yes
 
   - name: Update repository
     yum: name=* 

@@ -1,5 +1,5 @@
 ---
-- hosts: ansiblehosts
+
   - name: add a group
     group:
       name: developers
